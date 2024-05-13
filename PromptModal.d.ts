@@ -1,6 +1,6 @@
 import { ModalProps } from './Modal';
 
-interface PromptModalProps extends Omit<ModalProps, 'type' | 'closeOnOutsideClick'> {
+interface PromptModalProps extends Omit<ModalProps, 'type' | 'closeOnOutsideClick' | 'closeOnESCKeydown' | 'dialogSize'> {
     title: string;
     placeholder?: string;
     onOk?: () => void;

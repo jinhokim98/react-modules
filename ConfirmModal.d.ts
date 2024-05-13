@@ -1,6 +1,6 @@
 import { ModalProps } from './Modal';
 
-interface ConfirmModalProps extends Omit<ModalProps, 'type' | 'closeOnOutsideClick'> {
+interface ConfirmModalProps extends Omit<ModalProps, 'type' | 'closeOnOutsideClick' | 'closeOnESCKeydown' | 'dialogSize'> {
     title: string;
     caption: string;
     onOk?: () => void;
